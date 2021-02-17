@@ -1,4 +1,4 @@
-<h1>New task</h1>
+<h1>Edit <%= @task.title %></h1>
 
 <%= form_for @task do |f| %>
   <%= f.label :title %>
@@ -7,7 +7,7 @@
   <%= f.label :details %>
   <%= f.text_field :details %>
   <br>
-  <%= f.submit "Create task" %>
+  <%= f.submit "Update task" %>
 <% end %>
 
 <div>
